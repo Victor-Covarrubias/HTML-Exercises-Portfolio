@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Etiquetas HTML
+        </title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Victor Alfonso Covarrubias Solis" />
+        <meta name="description" content="Hojas de estilo en cascada" />
+        <meta name="Keywords" content="HTML, tags, ..."/>
+        <meta name="generator" content="Visual Studio Code" />
+        <meta name="revised" content="Lunes, 09 de Mayo 2022" />
+        <style type="text/css">
+            #tres{
+                column-count: 3;
+                column-gap: 50px;
+                text-align: justify;
+                column-rule: 1px dotted black;
+            }
+            ul{
+                list-style: none;
+                padding-left: 10px;
+                margin-left: 10px;
+            }
+            li::before{
+                content: "\2615";
+                padding-right: 8px;
+            }
+            li{
+                color:green;
+            }
+            ul li:nth-child(odd){
+                background-color: white;
+            }
+            ul li:nth-child(even){
+                background-color: lightgray;
+            }
+            .tooltip{
+                position:relative;
+                display:inline-block;
+                border-bottom:1px dotted black;
+            }
+            .tooltip .tooltiptext{
+                visibility:hidden;
+                position:absolute;
+                z-index: 1;
+                width:125px;
+                text-align:center;
+                padding:2px;
+                border: 1px solid grey;
+                background-color: beige;
+            }
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <hgroup>
+                <h2>Columnas</h2>
+                <div style="text-align:justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique tellus sed sagittis pharetra. Sed mattis lacus sed iaculis blandit. Maecenas suscipit eleifend sapien in malesuada. In porta vitae purus ac blandit. Nunc at volutpat turpis. Suspendisse a elit non mauris iaculis consequat. Ut ut arcu id ipsum elementum elementum in rutrum turpis. Ut non vestibulum dui. Proin in rhoncus justo. Praesent luctus sem in lacinia congue. Praesent libero eros, tempus a egestas sed, ultricies a nibh. In non dui fermentum velit varius laoreet. Cras semper tempor condimentum. Nulla vehicula laoreet nibh, et fringilla urna vestibulum at. Etiam quis lectus ex.
+                </div>
+                <br>
+                <div id="tres">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique tellus sed sagittis pharetra. Sed mattis lacus sed iaculis blandit. Maecenas suscipit eleifend sapien in malesuada. In porta vitae purus ac blandit. Nunc at volutpat turpis. Suspendisse a elit non mauris iaculis consequat. Ut ut arcu id ipsum elementum elementum in rutrum turpis. Ut non vestibulum dui. Proin in rhoncus justo. Praesent luctus sem in lacinia congue. Praesent libero eros, tempus a egestas sed, ultricies a nibh. In non dui fermentum velit varius laoreet. Cras semper tempor condimentum. Nulla vehicula laoreet nibh, et fringilla urna vestibulum at. Etiam quis lectus ex.
+                </div>
+                <br>
+                <div style="text-align:justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique tellus sed sagittis pharetra. Sed mattis lacus sed iaculis blandit. Maecenas suscipit eleifend sapien in malesuada. In porta vitae purus ac blandit. Nunc at volutpat turpis. Suspendisse a elit non mauris iaculis consequat. Ut ut arcu id ipsum elementum elementum in rutrum turpis. Ut non vestibulum dui. Proin in rhoncus justo. Praesent luctus sem in lacinia congue. Praesent libero eros, tempus a egestas sed, ultricies a nibh. In non dui fermentum velit varius laoreet. Cras semper tempor condimentum. Nulla vehicula laoreet nibh, et fringilla urna vestibulum at. Etiam quis lectus ex.
+                </div>
+            </hgroup>
+            <hgroup>
+                <h2>Lista ordenada personalizada</h2>
+                <ol type="A" start="27">
+                    <li>Primero</li>
+                    <li>Segundo</li>
+                    <li>Tercero</li>
+                    <li>Cuarto</li>
+                    <li>Quinto</li>
+                </ol>
+            </hgroup>
+            <hgroup>
+                <h2>Lista personalizada</h2>
+                <ul>
+                    <li>Primero</li>
+                    <li>Segundo</li>
+                    <li>Tercero</li>
+                    <li>Cuarto</li>
+                    <li>Quinto</li>
+                </ul>
+            </hgroup>
+            <hgroup>
+                <h2>Simbolos especiales</h2>
+                <p>I will display &spades;</p>
+                <p>I will display &#9824;</p>
+                <p>I will display &#x2660;</p>
+            </hgroup>
+            <hgroup>
+                <h2>Tooltip</h2>
+                <div class="tooltip">
+                    Texto con tooltip.
+                    <span class="tooltiptext">
+                        Tooltip ejemplo...
+                    </span>
+                </div>
+                Este texto no contiene un tooltip
+            </hgroup>
+        </main>
+    </body>
+</html>
+    

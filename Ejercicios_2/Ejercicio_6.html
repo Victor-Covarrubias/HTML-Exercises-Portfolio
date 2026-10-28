@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Etiquetas HTML
+        </title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Victor Alfonso Covarrubias Solis" />
+        <meta name="description" content="Hojas de estilo en cascada" />
+        <meta name="Keywords" content="HTML, tags, div, style"/>
+        <meta name="generator" content="Visual Studio Code" />
+        <meta name="revised" content="Viernes, 06 de Mayo 2022" />
+        <style type="text/css">
+            body{
+                background-color: #92bdbd;
+                animation-name: ejemplo;
+                animation-duration: 30s;
+                animation-delay: 0s;
+                animation-iteration-count: 5;
+                animation-direction:normal;
+            }
+            
+            div{
+                width:1000px;
+                height:300px;
+                text-align: center;
+                background-color:black;
+                border: 2px solid black;
+                /*transition:width 0.5s, height 0.5s;*/
+            }
+
+            #animacion{
+                width:1000px;
+                height:500px;
+                position:relative;
+                animation-name: ejemplo;
+                animation-duration: 20s;
+                animation-delay: 0s;
+                animation-iteration-count: 5;
+                animation-direction:normal;
+            }
+            
+            @keyframes ejemplo{
+                0%{background-color: red; left:0px; top:0px;}
+                25%{background-color: yellow; left:500px; top:0px;}
+                50%{background-color: blue; left:500px; top:500px;}
+                75%{background-color: green; left:0px; top:500px;}
+                100%{background-color: red; left:0px; top:0px;}
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <hgroup>
+                <h2>Animaci&oacute;n</h2>
+                <div id="animacion"></div>
+            </hgroup>
+        </main>
+    </body>
+</html>

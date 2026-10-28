@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Etiquetas HTML
+        </title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Victor Alfonso Covarrubias Solis" />
+        <meta name="description" content="Etiquetas multimedia" />
+        <meta name="Keywords" content="HTML, tags, img, figure, figcaption, canvas, svg"/>
+        <meta name="generator" content="Visual Studio Code" />
+        <meta name="revised" content="Jueves, 10 de Marzo 2022" />
+    </head>
+    <body>
+        <main>
+            <h1>Main</h1>
+            <section>
+                <h2>Imagen</h2>
+                <details>
+                    <summary>Enlace Web</summary>
+                    <img alt="UPSLP (Logo)" src="https://www.upslp.edu.mx/upslp/wp-content/uploads/2021/02/instagram_upslp.jpg">
+                </details>
+                <details>
+                    <summary>Original</summary>
+                    <img alt="Casa del mediterraneo (grande)" src="Media/trulli.jpg">
+                </details>
+                <details>
+                    <summary>Widht</summary>
+                    <img alt="Casa del mediterraneo (small)" src="Media/trulli.jpg" widht="300">
+                </details>
+                <details>
+                    <summary>Height</summary>
+                    <img alt="Casa del mediterraneo (medium)" src="Media/trulli.jpg" Height="100">
+                </details>
+            </section>
+            <section>
+                <h2>Gif</h2>
+                <img alt="Boton encendido/apagado" src="Media/on_off.gif" height="150">
+            </section>
+            <section>
+                <h2>Wallpapers</h2>
+                <details>
+                    <summary>Resoluci&oacute;n original</summary>
+                    <figure>
+                        <img alt="Marvel 10 Years" src="Media/Marvel10Years.jpg">
+                        <figcaption>Marvel Studios - First 10 Years (Tama&ntilde;o completo)</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>Resoluci&oacute;n autom&aacute;tica</summary>
+                    <figure>
+                        <img alt="Marvel 10 Years" src="Media/Marvel10Years.jpg" width="100%">
+                        <figcaption>Marvel Studios - First 10 Years (Tama&ntilde;o autom&aacute;tico)</figcaption>
+                    </figure>
+                </details>
+                <details>
+                    <summary>Resoluci&oacute;n autom&aacute;tica (Imagen peque&ntilde;a</summary>
+                    <figure>
+                        <img alt="Marvel 10 Years" src="Media/Marvel10Years.jpg" width="50%">
+                        <figcaption>Marvel Studios - First 10 Years (Tama&ntilde;o autom&aacute;tico)</figcaption>
+                    </figure>
+                </details>
+            </section>
+            <section>
+                <h2>Canvas</h2>
+                <canvas id="myCanvas"></canvas>
+                <script>
+                    var varCanvas =
+                    document.getElementById("myCanvas");
+                    var varPlano =
+                    varCanvas.getContext("2d");
+                    varPlano.fillStyle = "#FF0000";
+                    varPlano.fillRect(0,0,80,80);
+                </script>
+            </section>
+            <section>
+                <h2>SVG</h2>
+                <svg width="500" height="500">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="yellow"/>
+                    <rect x="50" y="20" rx="20" ry="20" width="250" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5"/>
+                </svg>
+            </section>
+        </main>
+    </body>
+</html>

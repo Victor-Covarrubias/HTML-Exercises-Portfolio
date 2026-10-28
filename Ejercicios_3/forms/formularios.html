@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Formularios
+        </title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Victor Alfonso Covarrubias Solis" />
+        <meta name="description" content="Formularios" />
+        <meta name="Keywords" content="HTML, tags, table, tr, td, th, thead, tbody, tfoot"/>
+        <meta name="generator" content="Visual Studio Code" />
+        <meta name="revised" content="Jueves, 31 de Marzo 2022" />
+    </head>
+    <body>
+        <form>
+            <hgroup>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pregunta</th>
+                            <th>Respuesta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label>Nombre</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Sexo</td>
+                            <td><label></label>
+                                <input type="radio" name="opciones">Hombre<br>
+                                <input type="radio" name="opciones">Mujer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Color favorito</td>
+                            <td>
+                                <select name="color">
+                                    <option>rojo</option>
+                                    <option>morado</option>
+                                    <option>azul</option>
+                                    <option>verde</option>
+                                    <option>amarillo</option>
+                                    <option>naranja</option>
+                                    <option>negro</option>
+                                    <option>gris</option>
+                                    <option>rosa</option>
+                                  </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Selecciona las opciones que creas correctas</td>
+                            <td>
+                                <input type="checkbox">La tierra es plana<br>
+                                <input type="checkbox">La tierra es redonda<br>
+                                <input type="checkbox">Creo en el horoscopo<br>
+                                <input type="checkbox">No creo en el horoscopo<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Escribe porque piensas que lo que seleccionaste<br>
+                            en la pregunta anterior es lo correcto</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label></label>
+                                <textarea rows="10" cols="60"></textarea><br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </hgroup>
+        </form><br><br>
+        <form>
+            <hgroup>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">formulario de usuario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label>Usuario</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Contraseña</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Servidor del juego</td>
+                            <td>
+                                <label></label>
+                                <textarea rows="5" cols="20"></textarea><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Seleccionar dificultad</td>
+                            <td><label></label>
+                                <input type="checkbox" name="opciones">Extrema<br>
+                                <input type="checkbox" name="opciones">Dificil<br>
+                                <input type="checkbox" name="opciones">Normal<br>
+                                <input type="checkbox" name="opciones">Facil<br>
+                                <input type="checkbox" name="opciones">Principiante<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Modalidad</td>
+                            <td>
+                                <label></label>
+                                <input type="radio" name="opciones">Solo
+                                <input type="radio" name="opciones">Multijugador
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edad</td>
+                            <td>
+                                <select name="Edad">
+                                    <option>menos de 18</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>mas de 21</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label></label> <input type="file"><br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label></label>
+                                <button>Dar Click?</button>
+                                <label></label>
+                                <button>Borrar respuestas</button>
+                                <label></label>
+                                <button>Subir formulario</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </hgroup>
+        </form><br><br>
+        <form>
+            <hgroup>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" align="center">UPSLP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label>Usuario</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Contraseña</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Carrera</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>accion</td>
+                            <td>
+                                <select name="accion">
+                                    <option>tarea</option>
+                                    <option>examen</option>
+                                    <option>presentacion</option>
+                                    <option>proyecto</option>
+                                  </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>rol</td>
+                            <td><label></label>
+                                <input type="radio" name="opciones">Director<br>
+                                <input type="radio" name="opciones">Maestro<br>
+                                <input type="radio" name="opciones">Alumno<br>
+                                <input type="radio" name="opciones">Intendente<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>plataforma</td>
+                            <td>
+                                <label></label>
+                                <input type="checkbox" name="opciones">outlook<br>
+                                <input type="checkbox" name="opciones">Blackboard<br>
+                                <input type="checkbox" name="opciones">Selfservice<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <label></label>
+                                <button>login</button>
+                                <label></label>
+                                <button>resetear</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </hgroup>
+        </form><br><br>
+        <form>
+            <hgroup>
+                <TABLE STYLE="BORDER:DASHED 2PX Red">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table border="1">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" align="center">Informacion Personal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><label>Nombre</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Apellido</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Email</label></td>
+                                            <td><label></label> <input type="email" placeholder="username@example.com"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Numero Telefonico</label></td>
+                                            <td><label></label> <input type="tel" placeholder="888-888-8888"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <table border="1">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" align="center">Informacion de perfil</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2"><label>Subir foto de perfil</label> <input type="file"><br></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Nombre de usuario deseado</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>contraseña deseada</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Escojer tipo de liga</td>
+                                            <td><label></label>
+                                                <input type="radio" name="opciones">Gratis
+                                                <input type="radio" name="opciones">Pro
+                                                <input type="radio" name="opciones">Semanal
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" align="center">
+                                                <label></label>
+                                                <button>Enviar</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </TABLE>
+            </hgroup>
+        </form>
+    </body>
+</html>

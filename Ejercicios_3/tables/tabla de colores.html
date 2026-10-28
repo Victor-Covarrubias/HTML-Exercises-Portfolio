@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Etiquetas HTML
+        </title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Victor Alfonso Covarrubias Solis" />
+        <meta name="description" content="Javascript- Document Object Model" />
+        <meta name="Keywords" content="HTML, tags, script"/>
+        <meta name="generator" content="Visual Studio Code" />
+        <meta name="revised" content="Jueves, 12 de Mayo 2022" />
+    </head>
+    <body>
+        <h1>HTML + CSS + JavaScript</h1>
+        <hgroup>
+            <table border="1">
+                <tr>
+                    <th></th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th>IV</th>
+                    <th>V</th>
+                </tr>
+                <tr>
+                    <th>Etiqueta</th>
+                    <td><button onclick="document.body.style.backgroundColor= 'red';">red</button></td>
+                    <td><button onclick="document.body.style.backgroundColor= 'blue';">blue</button></td>
+                    <td><button onclick="document.body.style.backgroundColor= 'green';">green</button></td>
+                    <td><button onclick="document.body.style.backgroundColor= 'purple';">purple</button></td>
+                    <td><button onclick="document.body.style.backgroundColor= 'yellow';">yellow</button></td>
+                </tr>
+                <tr>
+                    <th>Script</th>
+                    <td>
+                        <button id="1">#FF5C52</button>
+                        <script>
+                            var button=document.getElementById('1');
+                            function cambiaColor(){
+                                document.body.style.backgroundColor='#FF5C52';
+                            }
+                            button.addEventListener('click', cambiaColor);
+                        </script>
+                    </td>
+                    <td>
+                        <button id="2">#42FFCD</button>
+                        <script>
+                            var button=document.getElementById('2');
+                            function cambiaColor(){
+                                document.body.style.backgroundColor='#42FFCD';
+                            }
+                            button.addEventListener('click', cambiaColor);
+                        </script>
+                    </td>
+                    <td>
+                        <button id="3">#FF3CA0</button>
+                        <script>
+                            var button=document.getElementById('3');
+                            function cambiaColor(){
+                                document.body.style.backgroundColor='#FF3CA0';
+                            }
+                            button.addEventListener('click', cambiaColor);
+                        </script>
+                    </td>
+                    <td>
+                        <button id="4">#573B84</button>
+                        <script>
+                            var button=document.getElementById('4');
+                            function cambiaColor(){
+                                document.body.style.backgroundColor='#573B84';
+                            }
+                            button.addEventListener('click', cambiaColor);
+                        </script>
+                    </td>
+                    <td>
+                        <button id="5">#978112</button>
+                        <script>
+                            var button=document.getElementById('5');
+                            function cambiaColor(){
+                                document.body.style.backgroundColor='#978112';
+                            }
+                            button.addEventListener('click', cambiaColor);
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Externo</th>
+                    <td>
+                        <button id="11">#510A0A</button>
+                        <script src="../scripts/Colors.js"></script>
+                    </td>
+                    <td>
+                        <button id="22">#05500D</button>
+                        <script src="../scripts/Colors.js"></script>
+                    </td>
+                    <td>
+                        <button id="33">#450248</button>
+                        <script src="../scripts/Colors.js"></script>
+                    </td>
+                    <td>
+                        <button id="44">#58787B</button>
+                        <script src="../scripts/Colors.js"></script>
+                    </td>
+                    <td>
+                        <button id="55">#80004D</button>
+                        <script src="../scripts/Colors.js"></script>
+                    </td>
+                </tr>
+            </table>
+        </hgroup>
+    </body>
+</html>

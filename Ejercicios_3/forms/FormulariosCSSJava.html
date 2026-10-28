@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Formularios
+        </title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Victor Alfonso Covarrubias Solis" />
+        <meta name="description" content="Javascript- Document Object Model" />
+        <meta name="Keywords" content="HTML, tags, script, style, table, input"/>
+        <meta name="generator" content="Visual Studio Code" />
+        <meta name="revised" content="Domingo, 22 de Mayo 2022" />
+        <style>
+            table tr:nth-child(odd){
+                background-color: white;
+            }
+            table tr:nth-child(even){
+                background-color: #CAEAF1;
+            }
+            table{
+                border-spacing: 0;
+                width:100%;
+            }
+            table td:first-child{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 align="center">Formulario</h1>
+            <table align="center" border="1">
+                <tr>
+                    <th style="background-color:#2C9EDD; color:white;" colspan="3">Fisica</th>
+                </tr>
+                <tr>
+                    <th>Formula</th>
+                    <th>Variables</th>
+                    <th>Resaultado</th>
+                </tr>
+                <tr>
+                    <td><img src="../Media/velocidad.png" alt="velocidad" width="150px" height="100px"></td>
+                    <td>
+                        Distancia:<input id="vdistancia" type="text" name="distancia"><br>
+                        Tiempo:<input id="vtiempo" type="text" name="Tiempo">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="velocidad()"><input id="respuestavelocidad"type="text" name="resvelocidad"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/aceleracion.png" alt="aceleracion" width="150px" height="100px"></td>
+                    <td>
+                        Velocidad:<input id="avelocidad" type="text" name="Velocidad"><br>
+                        Tiempo:<input id="atiempo" type="text" name="Tiempo">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="aceleracion()"><input id="respuestaaceleracion"type="text" name="resaceleracion"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/peso.png" alt="peso" width="150px" height="100px"></td>
+                    <td>
+                        Masa:<input id="pmasa" type="text" name="Masa">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="peso()"><input id="respuestapeso"type="text" name="respeso"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/relatividad.png" alt="relatividad" width="150px" height="100px"></td>
+                    <td>
+                        Masa:<input id="rmasa" type="text" name="Masa">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="relatividad()"><input id="respuestarelatividad"type="text" name="resrelatividad"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/gravitacion.png" alt="gravitacion" width="150px" height="100px"></td>
+                    <td>
+                        Masa:<input id="gmasa" type="text" name="Masa"><br>
+                        Masa:<sub>2</sub>:<input id="gmasa2" type="text" name="Masa2"><br>
+                        Distancia:<input id="gdistancia" type="text" name="Distancia">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="gravitacion()"><input id="respuestagravitacion"type="text" name="resgravitacion"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/pitagoras.png" alt="pitagoras" width="180px" height="130px"></td>
+                    <td>
+                        solo escribe en dos lados para sacar el faltante<br>
+                        Lado a:<input id="pladoa" type="text" name="Ladoa"><br>
+                        Lado b:<input id="pladob" type="text" name="Ladob"><br>
+                        Lado c:<input id="pladoc" type="text" name="Ladoc">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="pitagoras()"><input id="respuestapitagoras"type="text" name="respitagoras"><br></td>
+                </tr>
+                <tr>
+                    <th style="background-color:#2C9EDD; color:white;" colspan="3">Matematicas</th>
+                </tr>
+                <tr>
+                    <th>Figura</th>
+                    <th>Variables</th>
+                    <th>Resaultado</th>
+                </tr>
+                <tr>
+                    <td><img src="../Media/cuadrado.png" alt="cuadrado" width="150px" height="100px"></td>
+                    <td>
+                        Lado:<input id="clado" type="text" name="Lado">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="cuadrado()"><input id="respuestacuadrado"type="text" name="rescuadrado"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/rectangulo.png" alt="rectangulo" width="150px" height="100px"></td>
+                    <td>
+                        Alto:<input id="ralto" type="text" name="alto"><br>
+                        Ancho:<input id="rancho" type="text" name="ancho">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="rectangulo()"><input id="respuestarectangulo"type="text" name="resrectangulo"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/triangulo.png" alt="triangulo" width="150px" height="100px"></td>
+                    <td>
+                        Base:<input id="tbase" type="text" name="base"><br>
+                        Altura:<input id="taltura" type="text" name="altura">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="triangulo()"><input id="respuestatriangulo"type="text" name="restriangulo"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/circulo.png" alt="circulo" width="150px" height="100px"></td>
+                    <td>
+                        Radio:<input id="cradio" type="text" name="radio">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="circulo()"><input id="respuestacirculo"type="text" name="rescirculo"><br></td>
+                </tr>
+                <tr>
+                    <td><img src="../Media/poligono.png" alt="poligono" width="300px" height="100px"></td>
+                    <td>
+                        No.lados:<input id="plados" type="text" name="lados"><br>
+                        Apotema:<input id="papotema" type="text" name="apotema">
+                    </td>
+                    <td><input type="button" value="Resultado" onclick="poligono()"><input id="respuestapoligono"type="text" name="respoligono"><br></td>
+                </tr>
+            </table>
+        </main>
+        <script>
+            function velocidad(){
+                var x = document.getElementById("vdistancia").value;
+                var y = document.getElementById("vtiempo").value;
+                var div = x/y;
+                document.getElementById("respuestavelocidad").value = div +' m/s';
+            }
+            function aceleracion(){
+                var x = document.getElementById("avelocidad").value;
+                var y = document.getElementById("atiempo").value;
+                var div = x/y;
+                document.getElementById("respuestaaceleracion").value = div +' m/s^2';
+            }
+            function peso(){
+                var x = document.getElementById("pmasa").value;
+                var mul = x*9.8;
+                //9.8 m/s^2 es el valor de la gravedad
+                document.getElementById("respuestapeso").value = mul +' kg';
+            }
+            function relatividad(){
+                var x = document.getElementById("rmasa").value;
+                var mul = x*9;
+                //es 9 y x10^16 m^2/s^2, porque c es 3 x 10^8 m/s y c esta al cuadrado en la formula
+                document.getElementById("respuestarelatividad").value = mul +' x10^16 J';
+            }
+            function gravitacion(){
+                var x = document.getElementById("gmasa").value;
+                var y = document.getElementById("gmasa2").value;
+                var z = document.getElementById("gdistancia").value;
+                var operacion = (x*y)/(z*z);
+                var grav = operacion*6.67384;
+                //G o cosntante de gravitacion es igual a = 6.67384 x 10^-11 N m^2/kg^2
+                //al multiplicarse la cosntante por las masas y divirse entre la distancia al cuadrado *kg^2/m^2 = las unidades que quedan son N
+                document.getElementById("respuestagravitacion").value = grav +' x10^-11 N';
+            }
+            function pitagoras(){
+                var x = document.getElementById("pladoa").value;
+                var y = document.getElementById("pladob").value;
+                var z = document.getElementById("pladoc").value;
+                var suma;
+                var pit;
+                if(x != 0 && y != 0 && z == 0){//se checa si solo se llenaron los datos de lado a y lado b para sacar lado c
+                    z=(x*x)+(y*y);
+                    pit=Math.sqrt(z);//funcion para sacar la raiz cuadrada en javascript
+                }else{
+                    if(x != 0 && y == 0 && z != 0){//se checa si solo se llenaron los datos de lado a y lado c para sacar lado b
+                        y=(z*z)-(x*x);
+                        pit=Math.sqrt(y);
+                    }else{
+                        if(x == 0 && y != 0 && z != 0){//se checa si solo se llenaron los datos de lado b y lado c para sacar lado a
+                            x=(z*z)-(y*y);
+                            pit=Math.sqrt(x);
+                        }
+                    }
+                }
+                document.getElementById("respuestapitagoras").value = pit +' cm';
+            }
+            function cuadrado(){
+                var x = document.getElementById("clado").value;
+                var mul = x*x;
+                //lado por lado
+                document.getElementById("respuestacuadrado").value = mul +' cm^2';
+            }
+            function rectangulo(){
+                var x = document.getElementById("ralto").value;
+                var y = document.getElementById("rancho").value;
+                //ancho por alto
+                var mul = x*y;
+                document.getElementById("respuestarectangulo").value = mul +' cm^2';
+            }
+            function triangulo(){
+                var x = document.getElementById("tbase").value;
+                var y = document.getElementById("taltura").value;
+                //base por altura sobre dos
+                var area = (x*y)/2;
+                document.getElementById("respuestatriangulo").value = area +' cm^2';
+            }
+            function circulo(){
+                var x = document.getElementById("cradio").value;
+                var pi=3.1416;
+                var area=(x*x)*pi;
+                //pi por radio al cuadrado, pi=3.1416
+                document.getElementById("respuestacirculo").value = area +' cm^2';
+            }
+            function poligono(){
+                var x = document.getElementById("plados").value;
+                var y = document.getElementById("papotema").value;
+                var angulo = 360/(2*x);
+                var angulorad = angulo*(3.1416/180);//3.1416 es pi
+                var tan= Math.tan(angulorad);//funcion para sacar la tangente en javascript
+                var co = y*tan;
+                var lado = 2*co;
+                var per = lado*x;
+                var area = (per*y)/2;
+                /*como solo tengo el apotema y el numero de lados, necesito hacer mas pasos
+                los cuales son 5 en total
+                1.-sacar el angulo =(360)/2*numero de lados y luego lo convierto en radianes para que funciones con math.tan angulo*(pi/280)
+                2.-sacar el cateto opuesto, ya tenemos el cateto adyacente el cual es el apotema = co = apotema*tan del angulo
+                3.-ahora que tenemos el cateto opuesto el cual es la mitad de un lado sacamos la medida del lado completa = 2*co
+                4.-ya tenemos la medida del lado entonces la multiplicamos por el numero de lados y porfin tenemos el perimetro = lado*numero de lados
+                5.-el area es igual a = (perimetro*apotema)/2 
+                */
+                document.getElementById("respuestapoligono").value = area +' cm^2';
+            }
+        </script>
+    </body>
+</html>
